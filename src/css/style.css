@@ -1,37 +1,46 @@
-body{
+body {
     font-family: 'Yugioh', serif;
     background-image: url(../image/fundo-site.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 30px;
 }
 
-.cabecalho{
+.cabecalho {
     display: flex;
     justify-content: center;
 }
 
-.cabecalho .titulo{
+.cabecalho .titulo {
     color: #f1ecff;
 }
 
-.cartao{
+.cartao {
     opacity: 0;
     display: flex;
     flex-direction: column;
     padding: 12px;
+    gap: 5px;
+    position: absolute;
 }
 
-.cartao.selecionado{
+.cartao.selecionado {
     opacity: 1;
+    z-index: 1;
 }
 
-.lista-de-cartas{
+.lista-de-cartas {
     width: 300px;
     height: 500px;
     border-radius: 10px;
+    position: relative;
 }
 
-.slider{
+.slider {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +56,7 @@ body{
     text-transform: uppercase;
 }
 
-.cartao .estrela{
+.cartao .estrela {
     width: 20px;
     height: 20px;
     background-image: url(../image/nivel-carta.png);
@@ -56,19 +65,19 @@ body{
     display: inline-block;
 }
 
-.cartao .nivel-carta{
+.cartao .nivel-carta {
     display: flex;
     justify-content: end;
     margin-right: 10px;
     gap: 5px;
 }
 
-.cartao .imagem-carta{
+.cartao .imagem-carta {
     max-width: 260px;
     align-self: center;
 }
 
-.cartao .informacoes{
+.cartao .informacoes {
     border-radius: 5px;
     max-width: 300px;
     color: #000;
@@ -76,9 +85,10 @@ body{
     border: 2px solid #a67c52;
     text-align: left;
     line-height: 1.5;
+    padding: 5px;
 }
 
-.cartao .informacoes .descricao{
+.cartao .informacoes .descricao {
     font-size: 13px;
     border-bottom: 1px solid #000;
     padding: 10px;
@@ -86,41 +96,80 @@ body{
     overflow-y: scroll;
 }
 
-.cartao .informacoes .informacoes-ataque{
+.cartao .informacoes .informacoes-ataque {
     display: flex;
     justify-content: flex-end;
     gap: 5px;
     padding: 10px;
 }
 
-.cartao .informacoes .informacoes-ataque span{
+.cartao .informacoes .informacoes-ataque span {
     font-size: 13px;
 }
 
-.fundo-1{
+.fundo-1 {
     background-image: url(../image/fundo-1.jpg);
 }
 
-.fundo-2{
+.fundo-2 {
     background-image: url(../image/fundo-2.jpg);
 }
 
-.fundo-3{
+.fundo-3 {
     background-image: url(../image/fundo-3.jpg);
 }
 
-.fundo-4{
+.fundo-4 {
     background-image: url(../image/fundo-4.jpg);
 }
 
-.fundo-5{
+.fundo-5 {
     background-image: url(../image/fundo-5.jpg);
 }
 
-.fundo-6{
+.fundo-6 {
     background-image: url(../image/fundo-6.jpg);
 }
 
-.fundo-7{
+.fundo-7 {
     background-image: url(../image/fundo-7.jpg);
+}
+
+.btn-seta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.btn-seta:hover {
+    background-color: #8351fe;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #c08057;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c08057;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #c08057;
 }
