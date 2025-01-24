@@ -1,0 +1,126 @@
+body{
+    font-family: 'Yugioh', serif;
+    background-image: url(../image/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho .titulo{
+    color: #f1ecff;
+}
+
+.cartao{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.cartao.selecionado{
+    opacity: 1;
+}
+
+.lista-de-cartas{
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+}
+
+.cartao .nome {
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.cartao .estrela{
+    width: 20px;
+    height: 20px;
+    background-image: url(../image/nivel-carta.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.cartao .nivel-carta{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    gap: 5px;
+}
+
+.cartao .imagem-carta{
+    max-width: 260px;
+    align-self: center;
+}
+
+.cartao .informacoes{
+    border-radius: 5px;
+    max-width: 300px;
+    color: #000;
+    background: radial-gradient(circle, #f3e2c8, #e4cfa5, #c4a57a);
+    border: 2px solid #a67c52;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.cartao .informacoes .descricao{
+    font-size: 13px;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+    max-height: 95px;
+    overflow-y: scroll;
+}
+
+.cartao .informacoes .informacoes-ataque{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    padding: 10px;
+}
+
+.cartao .informacoes .informacoes-ataque span{
+    font-size: 13px;
+}
+
+.fundo-1{
+    background-image: url(../image/fundo-1.jpg);
+}
+
+.fundo-2{
+    background-image: url(../image/fundo-2.jpg);
+}
+
+.fundo-3{
+    background-image: url(../image/fundo-3.jpg);
+}
+
+.fundo-4{
+    background-image: url(../image/fundo-4.jpg);
+}
+
+.fundo-5{
+    background-image: url(../image/fundo-5.jpg);
+}
+
+.fundo-6{
+    background-image: url(../image/fundo-6.jpg);
+}
+
+.fundo-7{
+    background-image: url(../image/fundo-7.jpg);
+}
