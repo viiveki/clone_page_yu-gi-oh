@@ -38,6 +38,7 @@ body {
     height: 500px;
     border-radius: 10px;
     position: relative;
+    padding: 12px;
 }
 
 .slider {
@@ -155,6 +156,29 @@ body {
 
 .btn-seta.btn-voltar {
     transform: rotateY(180deg);
+}
+
+.carta-virada.mostrar-fundo-carta {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../image/fundo-carta.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.cartao.virar {
+    transform: rotateZ(90deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.esconder {
+    display: none;
 }
 
 body::-webkit-scrollbar-track {
